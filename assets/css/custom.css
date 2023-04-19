@@ -1,0 +1,309 @@
+/** CUSTOM FONT **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/** HEADER ***/
+
+.site-header {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+#primary-menu .menu-button{
+  background: #FA4321;
+ color: #fff;
+ font-size: 16px;
+ text-transform: uppercase;
+ font-weight: 800;
+ padding: 6px 16px
+}
+
+#primary-menu .menu-button:hover{
+  background: #ff0000;
+ color: #fff !important;
+
+}
+
+
+.main-navigation #primary-menu {
+  justify-content: end;
+  align-items: center;
+}
+
+#primary-menu a {
+  
+  font-weight: 800;
+  color: #0a0a27;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#primary-menu li {
+  padding-right: 57px;
+}
+#primary-menu li:last-child {
+  padding-right: 0px;
+}
+
+#primary-menu a:hover {
+  color: #ef4828 !important;
+}
+
+#primary-menu .menu-item-has-children > a::after {
+  content: "\005E";
+  position: absolute;
+  right: -20px;
+  transform: rotate(182deg);
+  transition: 0.2s ease-in;
+}
+
+#primary-menu .menu-item-has-children > a:hover::after {
+  transform: rotate(0deg);
+}
+
+#primary-menu .menu-item-has-children > a {
+  position: relative;
+}
+
+#primary-menu .sub-menu {
+  padding: 10px;
+  border: 1px solid #ef4828;
+  background-color: #fff;
+}
+
+/*** HEADER END ***/
+
+/*** LEGACY SECTION **/
+
+.idea_theorem_container_full_width .idea_theorem_member{
+  display: flex;
+
+ 
+}
+
+.idea_theorem_container_full_width .idea_theorem_member img{
+  width: 62px;
+  height: 62px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.idea_theorem_container_full_width .member-photo{
+  margin-right: 26px;
+}
+
+.idea_theorem_container_full_width .member-details .name{
+font-size: 18px;
+font-weight: bold;
+font-family: 'Montserrat';
+  margin-top: 13px;
+  line-height: 10px;
+  color: #0A0A27
+}
+.idea_theorem_container_full_width .member-details .title{
+font-size: 16px;
+;
+font-family: 'Montserrat';
+  color: #0A0A27
+}
+
+.idea_theorem_container_full_width{
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding-top: 73px;
+  padding-bottom: 100px;
+  margin-bottom: 60px;
+}
+
+.idea_theorem_legacy_content{
+  background: #fff;
+  max-width: 791px;
+  padding-top: 82px;
+  padding-left: 195px;
+  padding-bottom: 69px;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 45px;
+  box-shadow: 0px 4px 40px 8px rgba(0, 0, 0, 0.07);
+  
+}
+
+.idea_theorem_legacy_content h2{
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 48px;
+  letter-spacing: 0.60px;
+  color: #0A0A27;
+  margin-top: 32px;
+
+}
+.idea_theorem_legacy_content h2::after{
+ content: '';
+  display: block;
+  width: 54px;
+  background: #FA4321;
+  height: 3px;
+  margin-top: 70px;
+  margin-bottom: 39px;
+
+}
+.idea_theorem_legacy_content img{
+ width: 250px;
+}
+
+.idea_theorem_legacy_content p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin-bottom: 60px;
+  
+}
+
+
+
+
+
+/*** LEGACY SECTION END **/
+
+/** CHALLENGE SECTION **/
+.idea_theorem-challenge__wrapper{
+  max-width: 90%;
+ padding: 0;
+  font-family: 'Montserrat';
+  
+}
+
+.idea_theorem-challenge__wrapper h3 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 31px;
+  letter-spacing: 0.32px;
+  color: #000;
+}
+
+.idea_theorem-challenge__wrapper h3::after {
+ content: '';
+  display: block;
+  width: 65px;
+  height: 2.33px;
+  background: #FA4321;
+  margin-top: 10px;
+  margin-bottom: 38px;
+}
+
+.idea_theorem-challenge__wrapper .color-text{
+  color: #FA4321;
+}
+
+.idea_theorem-challenge__wrapper p{
+  color: #0A0A27;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  line-height: 32px;
+  
+}
+
+.idea_theorem-challenge__wrapper img{
+  width: 100%;
+  
+}
+
+
+ /*** CHALLENGE SECTION END ** */
+
+/*** RESPONSIVE DESIGN ***/
+
+@media only screen and (max-width: 990px) {
+  /*** HEADER MOBILE NAVIGATION **/
+  .site-header {
+    max-width: 95%;
+  }
+  .site-header .menu-toggle {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+  }
+  .main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #masthead {
+    position: relative;
+  }
+  .main-navigation.toggled .menu-menu-1-container {
+    position: absolute;
+    top: 86px;
+    background: #fff;
+    width: 100%;
+    display: block;
+    left: 0;
+    padding: 13px;
+  }
+
+  #primary-menu .menu-item {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 5px 0;
+  }
+  .main-navigation ul .focus ul {
+    position: inherit;
+    z-index: 99999;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    display: block !important;
+  }
+  #primary-menu .menu-item-has-children > a::after {
+    right: 5px;
+  }
+  .site-header .menu-toggle {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    padding: 0;
+    padding-bottom: 7px;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    background: #fa4321;
+    color: #fff;
+  }
+
+  /*** HEADER MOBILE NAVIGATION END **/
+
+
+  /*** CHALLENGE SECTION ***/
+  .idea_theorem_container{
+    max-width: 95%;
+  }
+
+  /*** LEGACY **/
+  .idea_theorem_legacy_content{
+    width: 80%;
+    margin: auto;
+    padding: 50px
+}   
+.idea_theorem_legacy_content h2 {
+font-size: 25px;
+
+}
+
+.idea_theorem_legacy_content P{
+  line-height: 26.5px;
+
+}
+.idea_theorem_legacy_content h2::after {
+  
+  margin-top: 40px;
+ 
+}
+}
